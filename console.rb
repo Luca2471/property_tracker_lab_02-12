@@ -8,5 +8,17 @@ sale1 = Property.new({
 'build' => "flat"
 })
 
+sale2 = Property.new({
+'address' => "Haymarket",
+'value' => 750000,
+'number_of_bedrooms' => 1,
+'build' => "flat"
+})
+
+Property.delete_all()
+
+sale1.save()
+sale2.save()
+
 binding.pry
 nil
